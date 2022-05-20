@@ -5,48 +5,65 @@
 
 body {
   font-family: sans-serif;
+  background: #acc9ee;
 }
 
-/* Navar css */
-.superior {
-  padding: 0%;
+/* navar */
+.header{
+  background: rgba(0, 30, 128, 0.342);
+  width: 100%;
+  height: 100px;
+  top: 0;left: 0;
 }
-
-.menu {
-  background: rgba(4, 7, 107, 0.425);
-  position: sticky;
-  padding: 0px;
+.container{
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
 }
-.opcion li {
-  padding: 20px;
-  float: right;
-  text-align: right;
-  list-style: none;
-}
-.opcion li:hover{
-  color: black;
-}
-
-.opcion li a {
-  text-align: center;
-  color: white;
-  text-decoration: none;
-}
-
-.opcion li a:hover {
-  color: rgb(0, 0, 0);
-  text-align: right;
-}
-.logo {
-  padding: 0px;
+.container .btn-menu, .logo{
   float: left;
+  line-height:100px;
 }
-/* Navar css */
-/* --------------------------------- */
+.container .btn-menu{
+  font-size: 40px;
+  cursor: pointer;
+}
+.logo h1 img{
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+.container .menu{
+  float: right;
+  line-height: 100px;
+}
+.container .menu a{
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.container .menu .a{
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5p
+}
+
+.container .menu a:hover{
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+}
+/* navar */
+/* ----------------------- */
 /* BANER */
 .banner {
   position: relative;
-  background-image: url(../img/banner.jpg);
+  background-image: url(../img/banner2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -69,40 +86,36 @@ body {
 .banner .text {
   color: rgb(255, 255, 255);
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 10%;
+  font-size: 25px;
   transform: translate(-10%, -50%);
-  width: 50%;
+  width: 40%;
   text-align: left;
 }
-@media screen and (max-width: 768px){
-  .banner .text {
-    color: rgb(221, 46, 46);
-    position: center;
-    top: 35%;
-    left: 10%;
-    transform: translate(-10%, -50%);
-    width: 50%;
-    text-align: left;
-  }
-
-  .banner .text h1 {
-    font-size: calc(3*1.5vw);
-  }
-
-  .banner .text p {
-    font-size: calc(1.2*1.5vw);
-  }
+.banner .text button{
+  margin-top: 40px;
+  transition: 00.3s;
+  padding: 10px;
+  background: #1004bd9a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.banner .text button:hover{
+  background: rgb(174, 143, 214);
+  color: black;
+  cursor: pointer;
 }
 .wave {
-  padding-top: 100px;
-  height: 150px;
+  padding-top: 50px;
+  height: 100px;
   overflow: hidden;
 }
 
 path {
   stroke: none;
-  fill: white ;
+  fill: #acc9ee;
   --darkreader-inline-stroke: none;
   --darkreader-inline-fill: #33a6ff
 }
@@ -116,27 +129,30 @@ svg{
   padding-left: 60%;
   display: flex;
   padding-inline-end: 20px;
-  margin: 40px;
+  margin: 100px;
 }
 
 .field input,
 .field button {
 
   display: block;
-  font: 1.2em 'Montserrat Alternates';
+  font: 1.2em 'Sans serif';
   border-radius: 5px;
   background: white;
   transition: 0.4s;
 }
 .field input {
   border: 3px solid rgba(61, 26, 188, 0.397);
+  font: 1.2em 'Sans serif';
   color: black;
   padding-left: 50px;
   border-radius: 10px;
 }
-
-.field input:hover {
+.field input:focus{
   border: 3px solid blue;
+  border-color: rgb(0, 4, 255);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(0, 183, 255, 0.6);
+  outline: 0 none;
 }
 
 .field button {
@@ -155,17 +171,21 @@ svg{
 }
 /* BANER */
 /* --------------------------------- */
-
 .bus{
   padding-left: 30px;
-  padding-top: 0px;
+  padding-top: -1px;
   width: 600px; 
   padding: 20px;
   float: right;
   list-style: none;
 }
-.text{margin-left: 20px;
-  padding-top: 100px;
+.options{
+  margin: auto;
+  padding: 80px;
+}
+.tex{
+  margin-left: 20px;
+  padding-top: 200px;
   font-size: 25px;
 }
 .end{
@@ -173,23 +193,27 @@ svg{
   text-align: center; 
   padding-top: 200px;
   font-size: 30px;
-  
+  margin: 20px;
 }
 .end  li{
-  width: 150px;
-  padding: 25px;
+  margin: 3px;
+  border-radius: 10px;
   float: left;
+  transition: 0.5s;
+  width: 150px;
+  height: auto;
+  padding: 15px;
   list-style: none;
   background: yellow;
+}
+.end li:hover{
+  background: yellowgreen;
+  cursor: pointer;
 }
 .end li a{
   text-align: center;
   color: rgb(0, 0, 0);
   text-decoration: none;
-}
-.centro{
-  margin-top: 0px;
-  margin: 100px;
 }
 /* footer */
 .pie{
@@ -242,4 +266,19 @@ a {
   color: white;
   text-decoration: none;
 }
+/* somos fadej */
+/* ------------- */
+/* Responsive */
+@media screen and (max-width: 768px){
+  .banner .text {
+    color: rgb(221, 46, 46);
+    position: center;
+    top: 35%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    width: 50%;
+    text-align: left;
+  }
+}
 
+/* Responsive */
