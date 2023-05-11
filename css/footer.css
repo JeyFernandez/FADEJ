@@ -1,0 +1,73 @@
+/* footer */
+.pie {
+    background: #062348;
+    overflow: hidden;
+}
+
+.izquierda {
+    float: left;
+    width: 550px;
+    padding: 20px;
+}
+
+.abajo {
+    color: white;
+    font-family: arial;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.derecha {
+    color: white;
+    float: left;
+    width: 550px;
+    padding: 20px;
+}
+
+.siguenos {
+    text-align: left;
+    color: white;
+    padding: 15px 0;
+}
+
+.otra {
+    color: white;
+    padding: 15px 0;
+}
+
+.contacto {
+    color-interpolation-filters: auto;
+    color: white;
+    padding: 15px 0;
+}
+
+.Copyright {
+    float: left;
+    width: 100%;
+    padding: 20px;
+    background-color: #144E8C;
+    overflow: hidden;
+    text-align: center;
+}
+
+.texto {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .banner .text {
+        color: rgb(221, 46, 46);
+        position: center;
+        top: 35%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+        width: 50%;
+        text-align: left;
+    }
+}
