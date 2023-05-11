@@ -81,5 +81,5 @@ const paymentForm = document.querySelector('#payment-form');
 paymentForm.addEventListener('submit', function (event) {
     event.preventDefault(); // evitar que el formulario se envíe automáticamente
 
-    window.location.assign('../html/home.html');
+    window.location.assign("../html/home.html");
 });

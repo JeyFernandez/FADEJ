@@ -9,6 +9,6 @@ function validateForm() {
         alert("Por favor, completa todos los campos.");
         return false;
     }
-    window.location.href = "../html/pago.html";
+    window.location.href = "../html/home.html";
     return true;
 }

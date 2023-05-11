@@ -1,73 +1,61 @@
-/* footer */
-.pie {
+footer {
     background: #062348;
-    overflow: hidden;
+    color: #fff;
+    padding: 40px 0;
 }
 
-.izquierda {
-    float: left;
-    width: 550px;
-    padding: 20px;
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
-.abajo {
-    color: white;
-    font-family: arial;
-    font-size: 16px;
-    padding: 10px;
+.footer-logo img {
+    height: 50px;
 }
 
-.derecha {
-    color: white;
-    float: left;
-    width: 550px;
-    padding: 20px;
+.footer-menu ul,
+.footer-social ul,
+.footer-contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.siguenos {
-    text-align: left;
-    color: white;
-    padding: 15px 0;
+.footer-menu ul li,
+.footer-social ul li,
+.footer-contact ul li {
+    margin-bottom: 10px;
 }
 
-.otra {
-    color: white;
-    padding: 15px 0;
+.footer-menu ul li:last-child,
+.footer-social ul li:last-child,
+.footer-contact ul li:last-child {
+    margin-bottom: 0;
 }
 
-.contacto {
-    color-interpolation-filters: auto;
-    color: white;
-    padding: 15px 0;
-}
-
-.Copyright {
-    float: left;
-    width: 100%;
-    padding: 20px;
-    background-color: #144E8C;
-    overflow: hidden;
-    text-align: center;
-}
-
-.texto {
-    color: white;
-}
-
-a {
-    color: white;
+.footer-menu ul li a,
+.footer-social ul li a {
+    color: #fff;
     text-decoration: none;
+    font-size: 16px;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .banner .text {
-        color: rgb(221, 46, 46);
-        position: center;
-        top: 35%;
-        left: 10%;
-        transform: translate(-10%, -50%);
-        width: 50%;
-        text-align: left;
-    }
+.footer-menu ul li a:hover,
+.footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social ul li a i {
+    font-size: 24px;
+}
+
+.footer-contact ul li i {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
 }
