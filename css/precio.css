@@ -12,47 +12,50 @@ body {
 
 /* formulario */
 .formulario {
-  margin-top: 50px;
-  padding-top: 40px;
+  margin-top: 3.125rem;
+  padding-top: 2.5rem;
 }
 
 h1 {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 form {
-  max-width: 500px;
+  max-width: 31.25rem;
   margin: 0 auto;
 }
 
 label {
   display: block;
-  margin-top: 10px;
+  margin-top: 0.625rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"] {
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  border-radius: 0.3125rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.9375rem;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 1rem;
   border-color: #0080FF;
-  border-width: 2px;
+  border-width: 0.125rem;
 }
 
 input[type="submit"] {
   background-color: #4CAF50;
   color: white;
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
-  margin: 10px;
-  font-size: 16px;
+  margin: 0.625rem;
+  font-size: 1rem;
 }
 
 input[type="submit"]:hover {
@@ -64,13 +67,12 @@ input[type="submit"]:hover {
 }
 
 .input {
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
   margin-left: 18%;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   border-color: #0080FF;
-  border-width: 2px;
-
+  border-width: 0.125rem;
 }
 
 .button-container {

@@ -93,9 +93,9 @@ h3 {
   width: 100%;
 }
 
-.texts{
-    height: 2rem;
-    width: 50%;
+.texts {
+  height: 2rem;
+  width: 50%;
 }
 
 #transporte_text {
@@ -104,17 +104,17 @@ h3 {
   margin-left: 1rem;
   margin-right: 3rem;
   margin-top: 5rem;
- 
+
 }
+
 .image_acerca :hover {
   margin-left: 20px;
   transition: 0.3s all ease;
 }
+
 .image_acerca {
   display: flex;
   height: 60%;
   width: 40%;
- 
-}
 
-/* Fin de stilos de Acerca de*/
+}
