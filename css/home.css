@@ -87,7 +87,6 @@ svg {
 
 .field input,
 .field button {
-
   display: block;
   font: 1.2em 'Sans serif';
   border-radius: 5px;
@@ -137,7 +136,7 @@ svg {
 
 .options {
   margin: auto;
-  padding: 80px;
+  padding: 70px;
 }
 
 .tex {
